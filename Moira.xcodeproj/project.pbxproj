@@ -1,0 +1,828 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		22D4EEEADC7B4899EDCC9D03 /* Pods_Moira.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7865BAECF45D696CB4A5B223 /* Pods_Moira.framework */; };
+		AF232D5D25F6575D0023B176 /* ProfileEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF232D5B25F6575D0023B176 /* ProfileEditViewController.swift */; };
+		AF232D5E25F6575D0023B176 /* ProfileEditViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF232D5C25F6575D0023B176 /* ProfileEditViewController.xib */; };
+		AF274AF025F2B3FD00979976 /* MyPageMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF274AEE25F2B3FD00979976 /* MyPageMainViewController.swift */; };
+		AF274AF125F2B3FD00979976 /* MyPageMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF274AEF25F2B3FD00979976 /* MyPageMainViewController.xib */; };
+		AF274AF725F4C7FA00979976 /* GmarketSansMedium.otf in Resources */ = {isa = PBXBuildFile; fileRef = AF274AF425F4C7FA00979976 /* GmarketSansMedium.otf */; };
+		AF274AF825F4C7FA00979976 /* GmarketSansBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = AF274AF525F4C7FA00979976 /* GmarketSansBold.otf */; };
+		AF274AF925F4C7FA00979976 /* GmarketSansLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = AF274AF625F4C7FA00979976 /* GmarketSansLight.otf */; };
+		AF50402B25F675810078A652 /* EducationEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF50402925F675810078A652 /* EducationEditViewController.swift */; };
+		AF50402C25F675810078A652 /* EducationEditViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF50402A25F675810078A652 /* EducationEditViewController.xib */; };
+		AF50403125F678200078A652 /* ProfileInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF50403025F678200078A652 /* ProfileInfo.swift */; };
+		AF50403625F69FDB0078A652 /* StatePopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF50403425F69FDB0078A652 /* StatePopUpViewController.swift */; };
+		AF50403725F69FDB0078A652 /* StatePopUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF50403525F69FDB0078A652 /* StatePopUpViewController.xib */; };
+		AF50403B25F6A88E0078A652 /* ProfileTextTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF50403925F6A88E0078A652 /* ProfileTextTableViewCell.swift */; };
+		AF50403C25F6A88E0078A652 /* ProfileTextTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF50403A25F6A88E0078A652 /* ProfileTextTableViewCell.xib */; };
+		AF50404925F6C3D20078A652 /* CareerEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF50404725F6C3D20078A652 /* CareerEditViewController.swift */; };
+		AF50404A25F6C3D20078A652 /* CareerEditViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF50404825F6C3D20078A652 /* CareerEditViewController.xib */; };
+		AF5455F925ED116900A8F20A /* MyTeamMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5455F725ED116900A8F20A /* MyTeamMainViewController.swift */; };
+		AF5455FA25ED116900A8F20A /* MyTeamMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF5455F825ED116900A8F20A /* MyTeamMainViewController.xib */; };
+		AF54560125ED166C00A8F20A /* MyTeamCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5455FF25ED166C00A8F20A /* MyTeamCollectionViewCell.swift */; };
+		AF54560225ED166C00A8F20A /* MyTeamCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF54560025ED166C00A8F20A /* MyTeamCollectionViewCell.xib */; };
+		AF54560725EEA39400A8F20A /* MyTeamDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF54560525EEA39400A8F20A /* MyTeamDetailViewController.swift */; };
+		AF54560825EEA39400A8F20A /* MyTeamDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF54560625EEA39400A8F20A /* MyTeamDetailViewController.xib */; };
+		AF54560F25EEA81600A8F20A /* TeammateCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF54560D25EEA81600A8F20A /* TeammateCollectionViewCell.swift */; };
+		AF54561025EEA81600A8F20A /* TeammateCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF54560E25EEA81600A8F20A /* TeammateCollectionViewCell.xib */; };
+		AF54561625EF6CE900A8F20A /* MyTeamEvaluateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF54561425EF6CE900A8F20A /* MyTeamEvaluateViewController.swift */; };
+		AF54561725EF6CE900A8F20A /* MyTeamEvaluateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF54561525EF6CE900A8F20A /* MyTeamEvaluateViewController.xib */; };
+		AF5E000025EA43B6001BF271 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5EFFFF25EA43B6001BF271 /* BaseViewController.swift */; };
+		AF5E000425EA4409001BF271 /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5E000325EA4409001BF271 /* BaseTabBarController.swift */; };
+		AF5E001225EA4734001BF271 /* TeamMakingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5E001025EA4734001BF271 /* TeamMakingViewController.swift */; };
+		AF5E001325EA4734001BF271 /* TeamMakingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF5E001125EA4734001BF271 /* TeamMakingViewController.xib */; };
+		AF5EFFBE25EA40B9001BF271 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5EFFBD25EA40B9001BF271 /* AppDelegate.swift */; };
+		AF5EFFC025EA40B9001BF271 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5EFFBF25EA40B9001BF271 /* SceneDelegate.swift */; };
+		AF5EFFC725EA40B9001BF271 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF5EFFC625EA40B9001BF271 /* Assets.xcassets */; };
+		AF5EFFCA25EA40B9001BF271 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF5EFFC825EA40B9001BF271 /* LaunchScreen.storyboard */; };
+		AF5EFFD525EA4129001BF271 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5EFFD425EA4129001BF271 /* Constant.swift */; };
+		AF5EFFDA25EA41B8001BF271 /* IndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5EFFD925EA41B8001BF271 /* IndicatorView.swift */; };
+		AF5EFFDE25EA41CE001BF271 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5EFFDD25EA41CE001BF271 /* Device.swift */; };
+		AF5EFFE225EA41F8001BF271 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5EFFE125EA41F8001BF271 /* UIColor.swift */; };
+		AF5EFFE625EA4236001BF271 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5EFFE525EA4236001BF271 /* String.swift */; };
+		AF5EFFE925EA4289001BF271 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5EFFE825EA4289001BF271 /* UIViewController.swift */; };
+		AF5EFFF125EA430E001BF271 /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5EFFF025EA430E001BF271 /* UIFont.swift */; };
+		AF5EFFF525EA433A001BF271 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5EFFF425EA433A001BF271 /* UIView.swift */; };
+		AF5EFFFB25EA436F001BF271 /* AppleSDGothicNeo-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = AF5EFFF925EA436E001BF271 /* AppleSDGothicNeo-Bold.otf */; };
+		AFADDD8C25EFC9FB00A1737D /* AppleSDGothicNeo-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = AFADDD8B25EFC9FB00A1737D /* AppleSDGothicNeo-Regular.otf */; };
+		AFB76B4B25EBB5C200DFEED3 /* TeamMakingTableViewLargeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB76B4925EBB5C100DFEED3 /* TeamMakingTableViewLargeCell.swift */; };
+		AFB76B4C25EBB5C200DFEED3 /* TeamMakingTableViewLargeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFB76B4A25EBB5C100DFEED3 /* TeamMakingTableViewLargeCell.xib */; };
+		AFB76B4F25EBC84B00DFEED3 /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB76B4E25EBC84B00DFEED3 /* UITableView.swift */; };
+		AFB76B5425EBCC6100DFEED3 /* TeamMakingTableViewSmallCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB76B5225EBCC6100DFEED3 /* TeamMakingTableViewSmallCell.swift */; };
+		AFB76B5525EBCC6100DFEED3 /* TeamMakingTableViewSmallCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFB76B5325EBCC6100DFEED3 /* TeamMakingTableViewSmallCell.xib */; };
+		AFFCDDA625F6CA8400106735 /* CareerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFCDDA425F6CA8400106735 /* CareerTableViewCell.swift */; };
+		AFFCDDA725F6CA8400106735 /* CareerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFFCDDA525F6CA8400106735 /* CareerTableViewCell.xib */; };
+		AFFCDDAC25F6E0D000106735 /* CertifiicateEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFCDDAA25F6E0D000106735 /* CertifiicateEditViewController.swift */; };
+		AFFCDDAD25F6E0D000106735 /* CertifiicateEditViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFFCDDAB25F6E0D000106735 /* CertifiicateEditViewController.xib */; };
+		AFFCDDB325F6F56400106735 /* AwardsEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFCDDB125F6F56400106735 /* AwardsEditViewController.swift */; };
+		AFFCDDB425F6F56400106735 /* AwardsEditViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFFCDDB225F6F56400106735 /* AwardsEditViewController.xib */; };
+		AFFCDDBB25F6F9B300106735 /* LinkEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFCDDB925F6F9B300106735 /* LinkEditViewController.swift */; };
+		AFFCDDBC25F6F9B300106735 /* LinkEditViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFFCDDBA25F6F9B300106735 /* LinkEditViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		38EBDAD9C608C5FFC72F78EA /* Pods-Moira.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moira.debug.xcconfig"; path = "Target Support Files/Pods-Moira/Pods-Moira.debug.xcconfig"; sourceTree = "<group>"; };
+		7865BAECF45D696CB4A5B223 /* Pods_Moira.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Moira.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DC288489755664B97CC82F1 /* Pods-Moira.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moira.release.xcconfig"; path = "Target Support Files/Pods-Moira/Pods-Moira.release.xcconfig"; sourceTree = "<group>"; };
+		AF232D5B25F6575D0023B176 /* ProfileEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditViewController.swift; sourceTree = "<group>"; };
+		AF232D5C25F6575D0023B176 /* ProfileEditViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileEditViewController.xib; sourceTree = "<group>"; };
+		AF274AEE25F2B3FD00979976 /* MyPageMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageMainViewController.swift; sourceTree = "<group>"; };
+		AF274AEF25F2B3FD00979976 /* MyPageMainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyPageMainViewController.xib; sourceTree = "<group>"; };
+		AF274AF425F4C7FA00979976 /* GmarketSansMedium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GmarketSansMedium.otf; sourceTree = "<group>"; };
+		AF274AF525F4C7FA00979976 /* GmarketSansBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GmarketSansBold.otf; sourceTree = "<group>"; };
+		AF274AF625F4C7FA00979976 /* GmarketSansLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GmarketSansLight.otf; sourceTree = "<group>"; };
+		AF50402925F675810078A652 /* EducationEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducationEditViewController.swift; sourceTree = "<group>"; };
+		AF50402A25F675810078A652 /* EducationEditViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EducationEditViewController.xib; sourceTree = "<group>"; };
+		AF50403025F678200078A652 /* ProfileInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInfo.swift; sourceTree = "<group>"; };
+		AF50403425F69FDB0078A652 /* StatePopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatePopUpViewController.swift; sourceTree = "<group>"; };
+		AF50403525F69FDB0078A652 /* StatePopUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StatePopUpViewController.xib; sourceTree = "<group>"; };
+		AF50403925F6A88E0078A652 /* ProfileTextTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTextTableViewCell.swift; sourceTree = "<group>"; };
+		AF50403A25F6A88E0078A652 /* ProfileTextTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileTextTableViewCell.xib; sourceTree = "<group>"; };
+		AF50404725F6C3D20078A652 /* CareerEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareerEditViewController.swift; sourceTree = "<group>"; };
+		AF50404825F6C3D20078A652 /* CareerEditViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CareerEditViewController.xib; sourceTree = "<group>"; };
+		AF5455F725ED116900A8F20A /* MyTeamMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTeamMainViewController.swift; sourceTree = "<group>"; };
+		AF5455F825ED116900A8F20A /* MyTeamMainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyTeamMainViewController.xib; sourceTree = "<group>"; };
+		AF5455FF25ED166C00A8F20A /* MyTeamCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTeamCollectionViewCell.swift; sourceTree = "<group>"; };
+		AF54560025ED166C00A8F20A /* MyTeamCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyTeamCollectionViewCell.xib; sourceTree = "<group>"; };
+		AF54560525EEA39400A8F20A /* MyTeamDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTeamDetailViewController.swift; sourceTree = "<group>"; };
+		AF54560625EEA39400A8F20A /* MyTeamDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyTeamDetailViewController.xib; sourceTree = "<group>"; };
+		AF54560D25EEA81600A8F20A /* TeammateCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeammateCollectionViewCell.swift; sourceTree = "<group>"; };
+		AF54560E25EEA81600A8F20A /* TeammateCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TeammateCollectionViewCell.xib; sourceTree = "<group>"; };
+		AF54561425EF6CE900A8F20A /* MyTeamEvaluateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTeamEvaluateViewController.swift; sourceTree = "<group>"; };
+		AF54561525EF6CE900A8F20A /* MyTeamEvaluateViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyTeamEvaluateViewController.xib; sourceTree = "<group>"; };
+		AF5E000325EA4409001BF271 /* BaseTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
+		AF5E001025EA4734001BF271 /* TeamMakingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamMakingViewController.swift; sourceTree = "<group>"; };
+		AF5E001125EA4734001BF271 /* TeamMakingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TeamMakingViewController.xib; sourceTree = "<group>"; };
+		AF5EFFBA25EA40B9001BF271 /* Moira.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Moira.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF5EFFBD25EA40B9001BF271 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AF5EFFBF25EA40B9001BF271 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		AF5EFFC625EA40B9001BF271 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AF5EFFC925EA40B9001BF271 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AF5EFFCB25EA40B9001BF271 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF5EFFD425EA4129001BF271 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		AF5EFFD925EA41B8001BF271 /* IndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicatorView.swift; sourceTree = "<group>"; };
+		AF5EFFDD25EA41CE001BF271 /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		AF5EFFE125EA41F8001BF271 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		AF5EFFE525EA4236001BF271 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		AF5EFFE825EA4289001BF271 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		AF5EFFF025EA430E001BF271 /* UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFont.swift; sourceTree = "<group>"; };
+		AF5EFFF425EA433A001BF271 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		AF5EFFF925EA436E001BF271 /* AppleSDGothicNeo-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AppleSDGothicNeo-Bold.otf"; sourceTree = "<group>"; };
+		AF5EFFFF25EA43B6001BF271 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		AFADDD8B25EFC9FB00A1737D /* AppleSDGothicNeo-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AppleSDGothicNeo-Regular.otf"; sourceTree = "<group>"; };
+		AFB76B4925EBB5C100DFEED3 /* TeamMakingTableViewLargeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamMakingTableViewLargeCell.swift; sourceTree = "<group>"; };
+		AFB76B4A25EBB5C100DFEED3 /* TeamMakingTableViewLargeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TeamMakingTableViewLargeCell.xib; sourceTree = "<group>"; };
+		AFB76B4E25EBC84B00DFEED3 /* UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
+		AFB76B5225EBCC6100DFEED3 /* TeamMakingTableViewSmallCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamMakingTableViewSmallCell.swift; sourceTree = "<group>"; };
+		AFB76B5325EBCC6100DFEED3 /* TeamMakingTableViewSmallCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TeamMakingTableViewSmallCell.xib; sourceTree = "<group>"; };
+		AFFCDDA425F6CA8400106735 /* CareerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareerTableViewCell.swift; sourceTree = "<group>"; };
+		AFFCDDA525F6CA8400106735 /* CareerTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CareerTableViewCell.xib; sourceTree = "<group>"; };
+		AFFCDDAA25F6E0D000106735 /* CertifiicateEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CertifiicateEditViewController.swift; sourceTree = "<group>"; };
+		AFFCDDAB25F6E0D000106735 /* CertifiicateEditViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CertifiicateEditViewController.xib; sourceTree = "<group>"; };
+		AFFCDDB125F6F56400106735 /* AwardsEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwardsEditViewController.swift; sourceTree = "<group>"; };
+		AFFCDDB225F6F56400106735 /* AwardsEditViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AwardsEditViewController.xib; sourceTree = "<group>"; };
+		AFFCDDB925F6F9B300106735 /* LinkEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkEditViewController.swift; sourceTree = "<group>"; };
+		AFFCDDBA25F6F9B300106735 /* LinkEditViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LinkEditViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AF5EFFB725EA40B9001BF271 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22D4EEEADC7B4899EDCC9D03 /* Pods_Moira.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		30E6513DD391260F05E6A68C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7865BAECF45D696CB4A5B223 /* Pods_Moira.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AF232D5925F6572B0023B176 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				AF50402F25F6780B0078A652 /* Common Entity */,
+				AFFCDDB725F6F96500106735 /* Link Edit */,
+				AFFCDDB025F6F54D00106735 /* Awards Edit */,
+				AFFCDDA925F6E0B200106735 /* Certificate Edit */,
+				AF50403F25F6C1C20078A652 /* Career Edit */,
+				AF50402725F675620078A652 /* Education Edit */,
+				AF232D5A25F6573D0023B176 /* Edit */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		AF232D5A25F6573D0023B176 /* Edit */ = {
+			isa = PBXGroup;
+			children = (
+				AF232D6125F660D00023B176 /* Cell */,
+				AF232D5B25F6575D0023B176 /* ProfileEditViewController.swift */,
+				AF232D5C25F6575D0023B176 /* ProfileEditViewController.xib */,
+			);
+			path = Edit;
+			sourceTree = "<group>";
+		};
+		AF232D6125F660D00023B176 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				AF50403925F6A88E0078A652 /* ProfileTextTableViewCell.swift */,
+				AF50403A25F6A88E0078A652 /* ProfileTextTableViewCell.xib */,
+				AFFCDDA425F6CA8400106735 /* CareerTableViewCell.swift */,
+				AFFCDDA525F6CA8400106735 /* CareerTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		AF274AED25F2B3E700979976 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				AF274AEE25F2B3FD00979976 /* MyPageMainViewController.swift */,
+				AF274AEF25F2B3FD00979976 /* MyPageMainViewController.xib */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		AF4C321C25EBAB7300307579 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				AF4C321D25EBAB8E00307579 /* Cell */,
+				AF5E001025EA4734001BF271 /* TeamMakingViewController.swift */,
+				AF5E001125EA4734001BF271 /* TeamMakingViewController.xib */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		AF4C321D25EBAB8E00307579 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				AFB76B5825EBCC7B00DFEED3 /* Team Making Table View Cells */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		AF50402725F675620078A652 /* Education Edit */ = {
+			isa = PBXGroup;
+			children = (
+				AF50402925F675810078A652 /* EducationEditViewController.swift */,
+				AF50402A25F675810078A652 /* EducationEditViewController.xib */,
+				AF50403425F69FDB0078A652 /* StatePopUpViewController.swift */,
+				AF50403525F69FDB0078A652 /* StatePopUpViewController.xib */,
+			);
+			path = "Education Edit";
+			sourceTree = "<group>";
+		};
+		AF50402F25F6780B0078A652 /* Common Entity */ = {
+			isa = PBXGroup;
+			children = (
+				AF50403025F678200078A652 /* ProfileInfo.swift */,
+			);
+			path = "Common Entity";
+			sourceTree = "<group>";
+		};
+		AF50403F25F6C1C20078A652 /* Career Edit */ = {
+			isa = PBXGroup;
+			children = (
+				AF50404725F6C3D20078A652 /* CareerEditViewController.swift */,
+				AF50404825F6C3D20078A652 /* CareerEditViewController.xib */,
+			);
+			path = "Career Edit";
+			sourceTree = "<group>";
+		};
+		AF5455F625ED115200A8F20A /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				AF5455FD25ED116D00A8F20A /* Cell */,
+				AF5455F725ED116900A8F20A /* MyTeamMainViewController.swift */,
+				AF5455F825ED116900A8F20A /* MyTeamMainViewController.xib */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		AF5455FD25ED116D00A8F20A /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				AF5455FF25ED166C00A8F20A /* MyTeamCollectionViewCell.swift */,
+				AF54560025ED166C00A8F20A /* MyTeamCollectionViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		AF54560425EEA36A00A8F20A /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				AF54560C25EEA7F400A8F20A /* Cell */,
+				AF54560525EEA39400A8F20A /* MyTeamDetailViewController.swift */,
+				AF54560625EEA39400A8F20A /* MyTeamDetailViewController.xib */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		AF54560C25EEA7F400A8F20A /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				AF54560D25EEA81600A8F20A /* TeammateCollectionViewCell.swift */,
+				AF54560E25EEA81600A8F20A /* TeammateCollectionViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		AF54561325EF6CD100A8F20A /* Evaluate */ = {
+			isa = PBXGroup;
+			children = (
+				AF54561425EF6CE900A8F20A /* MyTeamEvaluateViewController.swift */,
+				AF54561525EF6CE900A8F20A /* MyTeamEvaluateViewController.xib */,
+			);
+			path = Evaluate;
+			sourceTree = "<group>";
+		};
+		AF5E000725EA46C6001BF271 /* My Page */ = {
+			isa = PBXGroup;
+			children = (
+				AF232D5925F6572B0023B176 /* Profile */,
+				AF274AED25F2B3E700979976 /* Main */,
+			);
+			path = "My Page";
+			sourceTree = "<group>";
+		};
+		AF5E000825EA46CB001BF271 /* My Team */ = {
+			isa = PBXGroup;
+			children = (
+				AF54561325EF6CD100A8F20A /* Evaluate */,
+				AF54560425EEA36A00A8F20A /* Detail */,
+				AF5455F625ED115200A8F20A /* Main */,
+			);
+			path = "My Team";
+			sourceTree = "<group>";
+		};
+		AF5E000925EA46DE001BF271 /* Team Making */ = {
+			isa = PBXGroup;
+			children = (
+				AF4C321C25EBAB7300307579 /* Main */,
+			);
+			path = "Team Making";
+			sourceTree = "<group>";
+		};
+		AF5E000A25EA46F0001BF271 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		AF5EFFB125EA40B9001BF271 = {
+			isa = PBXGroup;
+			children = (
+				AF5EFFBC25EA40B9001BF271 /* Moira */,
+				AF5EFFBB25EA40B9001BF271 /* Products */,
+				E9B0CDB7481C802FFE603F4A /* Pods */,
+				30E6513DD391260F05E6A68C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AF5EFFBB25EA40B9001BF271 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AF5EFFBA25EA40B9001BF271 /* Moira.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AF5EFFBC25EA40B9001BF271 /* Moira */ = {
+			isa = PBXGroup;
+			children = (
+				AF5EFFD325EA4113001BF271 /* Configuration */,
+				AF5E000A25EA46F0001BF271 /* Home */,
+				AF5E000925EA46DE001BF271 /* Team Making */,
+				AF5E000825EA46CB001BF271 /* My Team */,
+				AF5E000725EA46C6001BF271 /* My Page */,
+				AF5EFFBD25EA40B9001BF271 /* AppDelegate.swift */,
+				AF5EFFBF25EA40B9001BF271 /* SceneDelegate.swift */,
+				AF5EFFC625EA40B9001BF271 /* Assets.xcassets */,
+				AF5EFFC825EA40B9001BF271 /* LaunchScreen.storyboard */,
+				AF5EFFCB25EA40B9001BF271 /* Info.plist */,
+			);
+			path = Moira;
+			sourceTree = "<group>";
+		};
+		AF5EFFD325EA4113001BF271 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				AF5EFFD425EA4129001BF271 /* Constant.swift */,
+				AF5EFFD825EA41A4001BF271 /* CommonClass */,
+				AF5EFFE025EA41ED001BF271 /* Extension */,
+				AF5EFFF825EA4354001BF271 /* Font */,
+				AF5EFFFE25EA437C001BF271 /* Base */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		AF5EFFD825EA41A4001BF271 /* CommonClass */ = {
+			isa = PBXGroup;
+			children = (
+				AF5EFFD925EA41B8001BF271 /* IndicatorView.swift */,
+				AF5EFFDD25EA41CE001BF271 /* Device.swift */,
+			);
+			path = CommonClass;
+			sourceTree = "<group>";
+		};
+		AF5EFFE025EA41ED001BF271 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				AF5EFFE125EA41F8001BF271 /* UIColor.swift */,
+				AF5EFFE525EA4236001BF271 /* String.swift */,
+				AF5EFFE825EA4289001BF271 /* UIViewController.swift */,
+				AF5EFFF025EA430E001BF271 /* UIFont.swift */,
+				AF5EFFF425EA433A001BF271 /* UIView.swift */,
+				AFB76B4E25EBC84B00DFEED3 /* UITableView.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		AF5EFFF825EA4354001BF271 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				AF274AF525F4C7FA00979976 /* GmarketSansBold.otf */,
+				AF274AF625F4C7FA00979976 /* GmarketSansLight.otf */,
+				AF274AF425F4C7FA00979976 /* GmarketSansMedium.otf */,
+				AF5EFFF925EA436E001BF271 /* AppleSDGothicNeo-Bold.otf */,
+				AFADDD8B25EFC9FB00A1737D /* AppleSDGothicNeo-Regular.otf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		AF5EFFFE25EA437C001BF271 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				AF5EFFFF25EA43B6001BF271 /* BaseViewController.swift */,
+				AF5E000325EA4409001BF271 /* BaseTabBarController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		AFB76B5825EBCC7B00DFEED3 /* Team Making Table View Cells */ = {
+			isa = PBXGroup;
+			children = (
+				AFB76B4925EBB5C100DFEED3 /* TeamMakingTableViewLargeCell.swift */,
+				AFB76B4A25EBB5C100DFEED3 /* TeamMakingTableViewLargeCell.xib */,
+				AFB76B5225EBCC6100DFEED3 /* TeamMakingTableViewSmallCell.swift */,
+				AFB76B5325EBCC6100DFEED3 /* TeamMakingTableViewSmallCell.xib */,
+			);
+			path = "Team Making Table View Cells";
+			sourceTree = "<group>";
+		};
+		AFFCDDA925F6E0B200106735 /* Certificate Edit */ = {
+			isa = PBXGroup;
+			children = (
+				AFFCDDAA25F6E0D000106735 /* CertifiicateEditViewController.swift */,
+				AFFCDDAB25F6E0D000106735 /* CertifiicateEditViewController.xib */,
+			);
+			path = "Certificate Edit";
+			sourceTree = "<group>";
+		};
+		AFFCDDB025F6F54D00106735 /* Awards Edit */ = {
+			isa = PBXGroup;
+			children = (
+				AFFCDDB125F6F56400106735 /* AwardsEditViewController.swift */,
+				AFFCDDB225F6F56400106735 /* AwardsEditViewController.xib */,
+			);
+			path = "Awards Edit";
+			sourceTree = "<group>";
+		};
+		AFFCDDB725F6F96500106735 /* Link Edit */ = {
+			isa = PBXGroup;
+			children = (
+				AFFCDDB925F6F9B300106735 /* LinkEditViewController.swift */,
+				AFFCDDBA25F6F9B300106735 /* LinkEditViewController.xib */,
+			);
+			path = "Link Edit";
+			sourceTree = "<group>";
+		};
+		E9B0CDB7481C802FFE603F4A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				38EBDAD9C608C5FFC72F78EA /* Pods-Moira.debug.xcconfig */,
+				8DC288489755664B97CC82F1 /* Pods-Moira.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AF5EFFB925EA40B9001BF271 /* Moira */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF5EFFCE25EA40B9001BF271 /* Build configuration list for PBXNativeTarget "Moira" */;
+			buildPhases = (
+				DF00E477C4EABDB04FC2B147 /* [CP] Check Pods Manifest.lock */,
+				AF5EFFB625EA40B9001BF271 /* Sources */,
+				AF5EFFB725EA40B9001BF271 /* Frameworks */,
+				AF5EFFB825EA40B9001BF271 /* Resources */,
+				1EDA7729CFE22F5912B310CA /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Moira;
+			productName = Moira;
+			productReference = AF5EFFBA25EA40B9001BF271 /* Moira.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AF5EFFB225EA40B9001BF271 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					AF5EFFB925EA40B9001BF271 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = AF5EFFB525EA40B9001BF271 /* Build configuration list for PBXProject "Moira" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AF5EFFB125EA40B9001BF271;
+			productRefGroup = AF5EFFBB25EA40B9001BF271 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AF5EFFB925EA40B9001BF271 /* Moira */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AF5EFFB825EA40B9001BF271 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF5455FA25ED116900A8F20A /* MyTeamMainViewController.xib in Resources */,
+				AF5EFFCA25EA40B9001BF271 /* LaunchScreen.storyboard in Resources */,
+				AF5EFFC725EA40B9001BF271 /* Assets.xcassets in Resources */,
+				AF274AF925F4C7FA00979976 /* GmarketSansLight.otf in Resources */,
+				AFFCDDB425F6F56400106735 /* AwardsEditViewController.xib in Resources */,
+				AF50403725F69FDB0078A652 /* StatePopUpViewController.xib in Resources */,
+				AFFCDDAD25F6E0D000106735 /* CertifiicateEditViewController.xib in Resources */,
+				AFADDD8C25EFC9FB00A1737D /* AppleSDGothicNeo-Regular.otf in Resources */,
+				AF54560825EEA39400A8F20A /* MyTeamDetailViewController.xib in Resources */,
+				AF274AF725F4C7FA00979976 /* GmarketSansMedium.otf in Resources */,
+				AF50402C25F675810078A652 /* EducationEditViewController.xib in Resources */,
+				AF274AF125F2B3FD00979976 /* MyPageMainViewController.xib in Resources */,
+				AF50403C25F6A88E0078A652 /* ProfileTextTableViewCell.xib in Resources */,
+				AF54561025EEA81600A8F20A /* TeammateCollectionViewCell.xib in Resources */,
+				AF5EFFFB25EA436F001BF271 /* AppleSDGothicNeo-Bold.otf in Resources */,
+				AF54561725EF6CE900A8F20A /* MyTeamEvaluateViewController.xib in Resources */,
+				AF274AF825F4C7FA00979976 /* GmarketSansBold.otf in Resources */,
+				AF54560225ED166C00A8F20A /* MyTeamCollectionViewCell.xib in Resources */,
+				AF50404A25F6C3D20078A652 /* CareerEditViewController.xib in Resources */,
+				AF232D5E25F6575D0023B176 /* ProfileEditViewController.xib in Resources */,
+				AF5E001325EA4734001BF271 /* TeamMakingViewController.xib in Resources */,
+				AFFCDDBC25F6F9B300106735 /* LinkEditViewController.xib in Resources */,
+				AFFCDDA725F6CA8400106735 /* CareerTableViewCell.xib in Resources */,
+				AFB76B5525EBCC6100DFEED3 /* TeamMakingTableViewSmallCell.xib in Resources */,
+				AFB76B4C25EBB5C200DFEED3 /* TeamMakingTableViewLargeCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1EDA7729CFE22F5912B310CA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Moira/Pods-Moira-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Moira/Pods-Moira-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Moira/Pods-Moira-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF00E477C4EABDB04FC2B147 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Moira-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AF5EFFB625EA40B9001BF271 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF274AF025F2B3FD00979976 /* MyPageMainViewController.swift in Sources */,
+				AF5EFFE225EA41F8001BF271 /* UIColor.swift in Sources */,
+				AFFCDDA625F6CA8400106735 /* CareerTableViewCell.swift in Sources */,
+				AF5EFFF525EA433A001BF271 /* UIView.swift in Sources */,
+				AF5455F925ED116900A8F20A /* MyTeamMainViewController.swift in Sources */,
+				AF5EFFE925EA4289001BF271 /* UIViewController.swift in Sources */,
+				AF50403625F69FDB0078A652 /* StatePopUpViewController.swift in Sources */,
+				AF54560725EEA39400A8F20A /* MyTeamDetailViewController.swift in Sources */,
+				AF5E001225EA4734001BF271 /* TeamMakingViewController.swift in Sources */,
+				AF54560125ED166C00A8F20A /* MyTeamCollectionViewCell.swift in Sources */,
+				AFFCDDBB25F6F9B300106735 /* LinkEditViewController.swift in Sources */,
+				AFFCDDAC25F6E0D000106735 /* CertifiicateEditViewController.swift in Sources */,
+				AF5EFFBE25EA40B9001BF271 /* AppDelegate.swift in Sources */,
+				AF5E000025EA43B6001BF271 /* BaseViewController.swift in Sources */,
+				AFB76B5425EBCC6100DFEED3 /* TeamMakingTableViewSmallCell.swift in Sources */,
+				AFFCDDB325F6F56400106735 /* AwardsEditViewController.swift in Sources */,
+				AFB76B4B25EBB5C200DFEED3 /* TeamMakingTableViewLargeCell.swift in Sources */,
+				AF5EFFC025EA40B9001BF271 /* SceneDelegate.swift in Sources */,
+				AF5EFFDE25EA41CE001BF271 /* Device.swift in Sources */,
+				AF54561625EF6CE900A8F20A /* MyTeamEvaluateViewController.swift in Sources */,
+				AF50402B25F675810078A652 /* EducationEditViewController.swift in Sources */,
+				AF5EFFD525EA4129001BF271 /* Constant.swift in Sources */,
+				AF5EFFE625EA4236001BF271 /* String.swift in Sources */,
+				AF5E000425EA4409001BF271 /* BaseTabBarController.swift in Sources */,
+				AFB76B4F25EBC84B00DFEED3 /* UITableView.swift in Sources */,
+				AF50403B25F6A88E0078A652 /* ProfileTextTableViewCell.swift in Sources */,
+				AF50403125F678200078A652 /* ProfileInfo.swift in Sources */,
+				AF54560F25EEA81600A8F20A /* TeammateCollectionViewCell.swift in Sources */,
+				AF50404925F6C3D20078A652 /* CareerEditViewController.swift in Sources */,
+				AF232D5D25F6575D0023B176 /* ProfileEditViewController.swift in Sources */,
+				AF5EFFF125EA430E001BF271 /* UIFont.swift in Sources */,
+				AF5EFFDA25EA41B8001BF271 /* IndicatorView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AF5EFFC825EA40B9001BF271 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF5EFFC925EA40B9001BF271 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AF5EFFCC25EA40B9001BF271 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AF5EFFCD25EA40B9001BF271 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AF5EFFCF25EA40B9001BF271 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38EBDAD9C608C5FFC72F78EA /* Pods-Moira.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 76RZ8ND7HV;
+				INFOPLIST_FILE = Moira/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.seok.Moira;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AF5EFFD025EA40B9001BF271 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DC288489755664B97CC82F1 /* Pods-Moira.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 76RZ8ND7HV;
+				INFOPLIST_FILE = Moira/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.seok.Moira;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AF5EFFB525EA40B9001BF271 /* Build configuration list for PBXProject "Moira" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF5EFFCC25EA40B9001BF271 /* Debug */,
+				AF5EFFCD25EA40B9001BF271 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF5EFFCE25EA40B9001BF271 /* Build configuration list for PBXNativeTarget "Moira" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF5EFFCF25EA40B9001BF271 /* Debug */,
+				AF5EFFD025EA40B9001BF271 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AF5EFFB225EA40B9001BF271 /* Project object */;
+}

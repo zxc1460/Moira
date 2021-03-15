@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MyTeamCollectionViewCell" id="gTV-IL-0wX" customClass="MyTeamCollectionViewCell" customModule="Moira" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="213" height="245"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="213" height="245"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="xQ2-Xo-92R">
+                        <rect key="frame" x="0.0" y="0.5" width="213" height="171"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="172" id="qOd-7n-C5L"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="팀이름" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p1Q-px-npv">
+                        <rect key="frame" x="0.0" y="180" width="213" height="20.5"/>
+                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Medium" family="Apple SD Gothic Neo" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fET-se-PAI">
+                        <rect key="frame" x="0.0" y="208.5" width="213" height="36.5"/>
+                        <color key="backgroundColor" red="0.95294117647058818" green="0.95294117647058818" blue="0.95294117647058818" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="12"/>
+                        <state key="normal" title="팀원 평가하기">
+                            <color key="titleColor" red="0.3411764705882353" green="0.3411764705882353" blue="0.3411764705882353" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tQr-Wm-naF">
+                        <rect key="frame" x="12" y="12" width="43" height="26"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="XG4-wJ-WsY">
+                                <rect key="frame" x="9" y="7.5" width="14" height="11.5"/>
+                                <color key="tintColor" red="0.45882352941176469" green="0.45882352941176469" blue="0.45882352941176469" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="14" id="IrA-2t-UqN"/>
+                                    <constraint firstAttribute="width" constant="14" id="dy7-Br-jng"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zRI-fO-i4e">
+                                <rect key="frame" x="26" y="6" width="8" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.45882352939999999" green="0.45882352939999999" blue="0.45882352939999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.3411764705882353" green="0.3411764705882353" blue="0.3411764705882353" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="zRI-fO-i4e" secondAttribute="trailing" constant="9" id="0nI-Y3-aCy"/>
+                            <constraint firstItem="XG4-wJ-WsY" firstAttribute="leading" secondItem="tQr-Wm-naF" secondAttribute="leading" constant="9" id="Ldh-zq-3Xj"/>
+                            <constraint firstItem="zRI-fO-i4e" firstAttribute="centerY" secondItem="XG4-wJ-WsY" secondAttribute="centerY" id="cS1-66-hXd"/>
+                            <constraint firstAttribute="bottom" secondItem="XG4-wJ-WsY" secondAttribute="bottom" constant="6" id="iZT-0p-lb6"/>
+                            <constraint firstItem="XG4-wJ-WsY" firstAttribute="top" secondItem="tQr-Wm-naF" secondAttribute="top" constant="6" id="qFM-UY-Qr0"/>
+                            <constraint firstItem="zRI-fO-i4e" firstAttribute="leading" secondItem="XG4-wJ-WsY" secondAttribute="trailing" constant="3" id="x9Z-Dt-nOR"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="tQr-Wm-naF" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="12" id="0SK-VE-xAD"/>
+                <constraint firstAttribute="trailing" secondItem="fET-se-PAI" secondAttribute="trailing" id="2RS-QZ-kvG"/>
+                <constraint firstAttribute="trailing" secondItem="xQ2-Xo-92R" secondAttribute="trailing" id="7hy-0t-dd4"/>
+                <constraint firstItem="fET-se-PAI" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="7oE-5f-5G5"/>
+                <constraint firstAttribute="bottom" secondItem="fET-se-PAI" secondAttribute="bottom" id="8oR-mb-dGY"/>
+                <constraint firstItem="p1Q-px-npv" firstAttribute="top" secondItem="xQ2-Xo-92R" secondAttribute="bottom" constant="8" id="FxC-1v-qtU"/>
+                <constraint firstAttribute="trailing" secondItem="p1Q-px-npv" secondAttribute="trailing" id="Pg7-MM-fhN"/>
+                <constraint firstItem="xQ2-Xo-92R" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Xnc-ZT-7ph"/>
+                <constraint firstItem="fET-se-PAI" firstAttribute="top" secondItem="p1Q-px-npv" secondAttribute="bottom" constant="8" id="c0P-eU-7zE"/>
+                <constraint firstItem="xQ2-Xo-92R" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="c8v-d1-ujW"/>
+                <constraint firstItem="tQr-Wm-naF" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="12" id="d0s-Wb-q90"/>
+                <constraint firstItem="p1Q-px-npv" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="zNW-RT-4KZ"/>
+            </constraints>
+            <size key="customSize" width="213" height="245"/>
+            <connections>
+                <outlet property="evaluateButton" destination="fET-se-PAI" id="NJG-Sa-alT"/>
+                <outlet property="imageView" destination="xQ2-Xo-92R" id="os1-kN-i5l"/>
+                <outlet property="teamNameLabel" destination="p1Q-px-npv" id="QUR-vN-icp"/>
+                <outlet property="teammateCountLabel" destination="zRI-fO-i4e" id="mVS-69-Gra"/>
+            </connections>
+            <point key="canvasLocation" x="35.507246376811594" y="153.01339285714286"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="person" catalog="system" width="128" height="117"/>
+        <image name="person.circle" catalog="system" width="128" height="121"/>
+    </resources>
+</document>

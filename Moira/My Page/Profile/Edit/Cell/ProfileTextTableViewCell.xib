@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProfileTextTableViewCell" rowHeight="55" id="KGk-i7-Jjw" customClass="ProfileTextTableViewCell" customModule="Moira" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="55"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="55"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="설명" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y5d-1a-vfA">
+                        <rect key="frame" x="0.0" y="10" width="302" height="35"/>
+                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Medium" family="Apple SD Gothic Neo" pointSize="14"/>
+                        <color key="textColor" red="0.17254901960784313" green="0.17254901960784313" blue="0.17254901960784313" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rtO-TU-1Mj">
+                        <rect key="frame" x="312" y="23.5" width="8" height="8"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="8" id="6H7-MP-l4T"/>
+                            <constraint firstAttribute="width" constant="8" id="8s0-XS-cwj"/>
+                        </constraints>
+                        <state key="normal" image="btnX"/>
+                        <connections>
+                            <action selector="deleteButtonClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Iyz-Kw-dVq"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Y5d-1a-vfA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Gat-mr-l49"/>
+                    <constraint firstItem="rtO-TU-1Mj" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="bI8-Ip-7uh"/>
+                    <constraint firstAttribute="bottom" secondItem="Y5d-1a-vfA" secondAttribute="bottom" constant="10" id="gVh-7G-Rld"/>
+                    <constraint firstAttribute="trailing" secondItem="rtO-TU-1Mj" secondAttribute="trailing" id="hFS-31-ri0"/>
+                    <constraint firstItem="rtO-TU-1Mj" firstAttribute="leading" secondItem="Y5d-1a-vfA" secondAttribute="trailing" constant="10" id="ilP-aY-ZzP"/>
+                    <constraint firstItem="Y5d-1a-vfA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="mTi-z5-pSv"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="titleLabel" destination="Y5d-1a-vfA" id="3Kc-7T-Z3l"/>
+            </connections>
+            <point key="canvasLocation" x="-23.188405797101453" y="88.727678571428569"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="btnX" width="16" height="16"/>
+    </resources>
+</document>

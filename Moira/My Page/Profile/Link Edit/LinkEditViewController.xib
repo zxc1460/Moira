@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LinkEditViewController" customModule="Moira" customModuleProvider="target">
+            <connections>
+                <outlet property="urlBorder" destination="gAA-8T-8Lk" id="dV8-rW-S6V"/>
+                <outlet property="urlBorderHeight" destination="KrL-En-CKe" id="HTg-pz-uVy"/>
+                <outlet property="urlTextField" destination="X7s-RG-B5d" id="FcF-b3-5RA"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="URL 주소" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Hl-oQ-cL8">
+                    <rect key="frame" x="22" y="72" width="60.5" height="20"/>
+                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="16"/>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="URL 주소를 입력해주세요." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="X7s-RG-B5d">
+                    <rect key="frame" x="22" y="108" width="373" height="18.5"/>
+                    <color key="textColor" red="0.15686274509803921" green="0.15686274509803921" blue="0.15686274509803921" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gAA-8T-8Lk">
+                    <rect key="frame" x="22" y="132.5" width="373" height="1"/>
+                    <color key="backgroundColor" red="0.75686274509803919" green="0.75686274509803919" blue="0.75686274509803919" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="KrL-En-CKe"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="gAA-8T-8Lk" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="22" id="1C8-Ob-66T"/>
+                <constraint firstItem="X7s-RG-B5d" firstAttribute="top" secondItem="3Hl-oQ-cL8" secondAttribute="bottom" constant="16" id="3sW-fW-Zed"/>
+                <constraint firstItem="X7s-RG-B5d" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="22" id="LVk-e3-P55"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="X7s-RG-B5d" secondAttribute="trailing" constant="19" id="Nk6-AZ-xrY"/>
+                <constraint firstItem="3Hl-oQ-cL8" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="22" id="hCP-ly-ZA7"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="gAA-8T-8Lk" secondAttribute="trailing" constant="19" id="jQN-F8-gk3"/>
+                <constraint firstItem="3Hl-oQ-cL8" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="28" id="ong-SV-VMp"/>
+                <constraint firstItem="gAA-8T-8Lk" firstAttribute="top" secondItem="X7s-RG-B5d" secondAttribute="bottom" constant="6" id="tFN-qu-Sd6"/>
+            </constraints>
+            <point key="canvasLocation" x="88" y="85"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
